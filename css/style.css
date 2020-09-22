@@ -6,13 +6,13 @@
 :root{
 	--color-is-1: #000000ff;
 
-	--mainColor:#15202B;
-	--secondaryColor:#192734;
+	--mainColor:#ffffff;
+	--secondaryColor:rgba(245,245,247);
 
 	--borderColor:#164D56;
 
-	--mainText:#fff;
-	--secondaryText:#eeeeee;
+	--mainText:rgb(0, 0, 0);
+	--secondaryText:#86868b;
 }
 
 *{
@@ -24,8 +24,6 @@
 
 
 body{
-	background: var(--mainColor);
-	color: #fff;
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -42,11 +40,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-	background: #1e1e24;
+	background: #c0c0c0;
 }
 
 body::-webkit-scrollbar-thumb {
-	background: linear-gradient(to top, #008aff,#00ffe7);
+	background: linear-gradient(to top, #202429,#000000);
 }
 
 
@@ -110,7 +108,7 @@ header .logo:hover span{
 
 #navigation ul li{
 	list-style: none;
-	padding-left: 40px;
+	padding-left: 20px;
 }
 
 #navigation .nav-link{
@@ -124,7 +122,7 @@ header .logo:hover span{
 	line-height: 1.2rem;
 	opacity: 0.9;
 	text-transform: uppercase;
-	padding: 7px 0;
+	padding: 7px 0px;
 	letter-spacing: 2px;
 	transition: all 0.2s ease-in-out;
 	font-family: 'Russo One', sans-serif;
@@ -155,6 +153,7 @@ header .logo:hover span{
 .nav-link:hover:before{
 	width: 100%;
 }
+
 
 /*Toggle*/
 .wrapper-header #check{
@@ -423,7 +422,7 @@ header .logo:hover span{
 footer{
 	position: relative;
 	display: flex;
-	min-height: 120px;
+	min-height: 80px;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
@@ -433,7 +432,8 @@ footer{
 footer .footer-content{
 	text-align: center;
 	position: absolute;
-	bottom: 30px;
+	bottom: 20px;
+	color: var(--mainColor);
 }
 footer .footer-content .f-content1{
 	font-weight: bold;
