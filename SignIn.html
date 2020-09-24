@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/58cdc139df.js" crossorigin="anonymous"></script>
+    <!--LogoPage-->
+    <link rel="icon" type="image/png" href="../img/logo.jpg">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Les Viets - SignIn</title>
+  </head>
+
+  <body id="mainpage">
+    <!--HEADER-->
+    <header class="header-nav">
+      <div class="navbar-logo">
+        <a href="#mainpage" class="logo"><span>LV</span></a>
+      </div>
+
+      <div class="wrapper-header">
+        <input type="checkbox" id="check">
+        <label for="check">
+          <span id="toggle"></span>
+        </label>
+
+        <div class="sidebar">
+          <div><span class="header-text">Menu</span></div>
+          <ul>
+            <li><a href="Homepage.html" ><span class="link-text">Accueil</span></a></li>
+            <li><a href="Organigramme.html" ><span class="link-text">Organigramme</span></a></li>
+            <li><a href="Contact.html" ><span class="link-text">Contact</span></a></li>
+            <li><a href="#mainpage" ><span class="link-text">SignIn</span></a></li>
+            <li><a href="SignUp.html" ><span class="link-text">SignUp</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="navigation">
+        <ul>
+          <li><a href="Homepage.html" class="nav-link">Accueil</a></li>
+          <li><a href="Organigramme.html" class="nav-link">Organigramme</a></li>
+          <li><a href="Contact.html" class="nav-link">Contact</a></li>
+          <li><a href="#mainpage" class="nav-link">SignIn</a></li>
+          <li><a href="SignUp.html" class="nav-link">SignUp</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!--SignIn-->
+    <div id="wrapper">
+      <form name="login-form" class="login-form" action="" method="post">
+      
+        <div class="header">
+        <h1>Login Form</h1>
+        <span>Fill out the form below to login to my super awesome imaginary control panel.</span>
+        </div>
+      
+        <div class="content">
+        <input name="username" type="text" class="input username" placeholder="Username" />
+        <div class="user-icon"></div>
+        <input name="password" type="password" class="input password" placeholder="Password" />
+        <div class="pass-icon"></div>		
+        </div>
+    
+        <div class="footer">
+        <input type="submit" name="submit" value="Login" class="button" />
+        <input type="submit" name="submit" value="Register" class="register" />
+        </div>
+      
+      </form>
+    </div>
+    
+
+
+    <!--footer-->
+    <footer>
+      <div class="footer-content">
+        <div class="f-content1">&copy; Web Copyright 2020</div>
+        <div class="f-content2">Designed by Huynh Dung NGUYEN</div>
+      </div>
+    </footer>
+  </body>
+
+</html>
