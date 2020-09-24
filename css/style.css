@@ -349,7 +349,7 @@ section.banner{
      position: relative;
      width: 100%;
      min-height: 100vh;
-     background-image: url(img/maison.jpg);
+     background-image: url(../img/maison.jpg);
      background-position: center;
      background-size: cover;
      box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
