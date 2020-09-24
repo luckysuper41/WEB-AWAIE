@@ -48,31 +48,29 @@
     </header>
 
     <!--SignIn-->
-    <div id="wrapper">
+    <section id="wrapper-signin">
       <form name="login-form" class="login-form" action="" method="post">
+
+        <h1>Login</h1>
       
-        <div class="header">
-        <h1>Login Form</h1>
-        <span>Fill out the form below to login to my super awesome imaginary control panel.</span>
+        <div class="content-login">
+          <div class="inputBox">
+            <input type="text" name="ID" required="required">
+            <span>ID</span>
+          </div>
+
+          <div class="inputBox">
+            <input type="password" name="password" required="required">
+            <span>Password</span>
+          </div>
         </div>
-      
-        <div class="content">
-        <input name="username" type="text" class="input username" placeholder="Username" />
-        <div class="user-icon"></div>
-        <input name="password" type="password" class="input password" placeholder="Password" />
-        <div class="pass-icon"></div>		
+        <div class="button-login">
+            <button class="submit-btn" type="submit" >Login</button>
+            <a href="SignUp.html">Register</a>
         </div>
-    
-        <div class="footer">
-        <input type="submit" name="submit" value="Login" class="button" />
-        <input type="submit" name="submit" value="Register" class="register" />
-        </div>
-      
       </form>
-    </div>
+    </section>
     
-
-
     <!--footer-->
     <footer>
       <div class="footer-content">

@@ -22,6 +22,7 @@
 
 a{
      text-decoration: none;
+
 }
 
 body{
@@ -30,7 +31,6 @@ body{
 	height: 100%;
 	min-width: 360px;
      z-index: 1;
-     min-height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -468,7 +468,8 @@ section.introduction .background-intro{
 section.introduction .background-intro img{
      width: 60%;
      height: 60%;
-     min-width: 340px;
+     text-align: center;
+     min-width: 320px;
      min-height: 300px;
      overflow: hidden;
      opacity: 0.9;
@@ -599,32 +600,36 @@ section.review .content-review .text-review{
      width: 100%;
 }
 
-.background .container{
+.background .container-contact{
      position: relative;
      width: 100%;
+     min-height: 68.3vh;
      margin: 0 auto;
      background: var(--secondaryColor);
-     padding: 59.5px 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin:  100px 0 40px 0;
 }
 
-.container form{
+.container-contact form{
      position: relative;
-     width: 80%;
+     width: 60%;
      margin: 0 auto;
-     padding: 50px 0;
+     min-width: 300px;
 }
 
 
-.container form h2{
+.container-contact form h2{
      width: 100%;
      color: var(--mainText);
      font-size: 3rem;
      text-align: center;
-     margin-bottom:  10px;
+     margin-top:  20px;
      font-family: 'Roboto', sans-serif;
 }
 
-.container form .row100{
+.container-contact form .row100{
      position: relative;
      width:  100%;
      display:  grid;
@@ -632,23 +637,23 @@ section.review .content-review .text-review{
      
 }
 
-.container form .row100 .col{
+.container-contact form .row100 .col{
      position: relative;
      width: 100%;
-     padding: 0 10px;
+     padding: 0 15px;
      margin:  30px 0 10px;
      transition: 0.5s;
 }
 
-.container form .row100 .inputBox{
+.container-contact form .row100 .inputBox{
      position: relative;
      width: 100%;
      height: 40px;
      color:  var(--mainText);
 }
 
-.container form .row100 .inputBox input,
-.container form .row100 .inputBox.textarea textarea{
+.container-contact form .row100 .inputBox input,
+.container-contact form .row100 .inputBox.textarea textarea{
      position: relative;
      width: 100%;
      height: 100%;
@@ -663,7 +668,7 @@ section.review .content-review .text-review{
      font-family: 'Roboto', sans-serif;
 }
 
-.container form .row100 .inputBox .text{
+.container-contact form .row100 .inputBox .text{
      position: absolute;
      top: 0;
      left: 0;
@@ -676,14 +681,14 @@ section.review .content-review .text-review{
      font-family: 'Roboto', sans-serif;
 }
 
-.container form .row100 .inputBox input:focus + .text,
-.container form .row100 .inputBox input:valid + .text{
+.container-contact form .row100 .inputBox input:focus + .text,
+.container-contact form .row100 .inputBox input:valid + .text{
      top: -35px;
      left: -10px;
      font-size: 1rem;
 }
 
-.container form .row100 .inputBox .line{
+.container-contact form .row100 .inputBox .line{
      position: absolute;
      bottom: 0;
      display: block;
@@ -695,37 +700,37 @@ section.review .content-review .text-review{
      pointer-events: none;
 }
 
-.container form .row100 .inputBox input:focus ~ .line,
-.container form .row100 .inputBox input:valid ~ .line{
+.container-contact form .row100 .inputBox input:focus ~ .line,
+.container-contact form .row100 .inputBox input:valid ~ .line{
      height: 100%;
 }
 
-.container form .row100 .inputBox.textarea{
+.container-contact form .row100 .inputBox.textarea{
      position: relative;
      width: 100%;
      height: 100px;
      padding:  10px 0;
 }
 
-.container form .row100 .inputBox.textarea textarea{
+.container-contact form .row100 .inputBox.textarea textarea{
      height: 100%;
      resize: none;
      overflow: hidden;
 }
 
-.container form .row100 .inputBox textarea:focus + .text,
-.container form .row100 .inputBox textarea:valid + .text{
+.container-contact form .row100 .inputBox textarea:focus + .text,
+.container-contact form .row100 .inputBox textarea:valid + .text{
      top: -35px;
      left: -10px;
      font-size: 1rem;
 }
 
-.container form .row100 .inputBox textarea:focus ~ .line,
-.container form .row100 .inputBox textarea:valid ~ .line{
+.container-contact form .row100 .inputBox textarea:focus ~ .line,
+.container-contact form .row100 .inputBox textarea:valid ~ .line{
      height: 100%;
 }
 
-.container form .row100 .inputBox input[type="submit"]{
+.container-contact form .row100 .inputBox input[type="submit"]{
      border:  none;
      padding:  7px 35px;
      cursor: pointer;
@@ -740,12 +745,12 @@ section.review .content-review .text-review{
      font-family: 'Roboto', sans-serif;
 }
 
-.container form .row100 .inputBox input[type="submit"]:hover{
+.container-contact form .row100 .inputBox input[type="submit"]:hover{
      color: #000000;
      background: rgb(53, 53, 53, 0.4);
 }
 
-.container form .row100 .inputBox input[type="submit"]:active{
+.container-contact form .row100 .inputBox input[type="submit"]:active{
      color: #000000;
      background: rgb(53, 53, 53, 0.4);
      transform: scale(0.97);
@@ -754,10 +759,273 @@ section.review .content-review .text-review{
 /*--------------------------------*/
 /*SignIn.html*/
 /*--------------------------------*/
+section#wrapper-signin{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     width: 100%;
+     position: relative;
+     min-height: 68.4vh;
+     margin: 0 auto;
+     background: var(--secondaryColor);
+     margin:  100px 0 40px 0;
+}
+
+section#wrapper-signin form{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: rgba(221, 221, 221, 0.5);
+     padding: 30px 50px 80px 50px;
+     outline: none;
+     border: 0;
+     border-radius: 5px;
+     width: 30%;
+     min-width: 300px;
+
+}
+
+section#wrapper-signin form h1{
+     font-size: 2.2rem;
+     color: var(--mainText);
+     font-family: 'Roboto', sans-serif;
+     line-height: 10rem;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+}
+
+section#wrapper-signin .content-login{
+     position: relative;
+     margin: 0 auto;
+     text-align: center;
+     width: 80%;
+}
+
+section#wrapper-signin .content-login .inputBox{
+     position: relative;
+     margin-bottom: 40px;
+     width: 100%;
+}
+   
+section#wrapper-signin .content-login .inputBox:last-child{
+     margin-bottom: 0;
+}
+
+section#wrapper-signin .content-login .inputBox input{
+     position: relative;
+     background: transparent;
+     outline: none;
+     border: none;
+     width: 100%;
+     color: var(--mainText);
+     padding-bottom: 5px;
+     font-size: 1.2rem;
+     letter-spacing: 1px;
+     font-weight: 300;
+     border-bottom: 1.5px solid  #444444;
+     resize: none;
+}
+
+section#wrapper-signin .content-login .inputBox span{
+     position: absolute;
+     left: 0;
+     font-size: 1.15rem;
+     font-weight: 300;
+     display: inline-block;
+     pointer-events: none;
+     letter-spacing: 1px;
+     color: #444444;
+     transition: all 0.2s ease-in-out;
+}
+
+section#wrapper-signin .content-login .inputBox input:focus ~ span,
+section#wrapper-signin .content-login .inputBox input:valid ~ span{
+  transform: translateY(-1.3rem);
+  color: var(--mainText);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+section#wrapper-signin .content-login .inputBox input:focus,
+section#wrapper-signin .content-login .inputBox input:valid{
+     border-bottom: 1.5px solid var(--mainText);
+}
+
+
+section#wrapper-signin .button-login{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 50px;
+}
+
+section#wrapper-signin .button-login .submit-btn{
+     width: 130px;
+     padding: 13px 33px;
+     cursor: pointer;
+     display: block;
+     background: linear-gradient(to right, #beb1af, #57474a);
+     border: 0;
+     outline: none;
+     border-radius: 30px;
+     transition: all 0.2s ease-in-out;
+     font-size: 1.1rem;
+     font-family: 'Roboto', sans-serif;
+     color: var(--mainText);
+     transition: all 0.3s ease-in-out;
+     margin-top: 10px;
+}
+   
+section#wrapper-signin .button-login .submit-btn:hover{
+     transform: scale(1.03);
+}
+
+section#wrapper-signin .button-login .submit-btn:active{
+     transform: scale(1);
+}
+
+section#wrapper-signin .button-login a{
+     position: relative;
+     display: block;
+     margin-top: 10px;
+     color: var(--mainText);
+     font-size: 1.1rem;
+     transition: all 0.3s ease-in-out;
+}
+
+section#wrapper-signin .button-login a:hover,
+section#wrapper-signin .button-login a:active{
+     color: rgb(0, 0, 255);
+     text-decoration: underline rgb(0, 0, 255);
+}
 
 /*--------------------------------*/
 /*SignUp.html*/
 /*--------------------------------*/
+
+section.signup{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     width: 100%;
+     position: relative;
+     min-height: 78.8vh;
+     margin: 0 auto;
+     background: var(--secondaryColor);
+     margin:  100px 0 40px 0;
+}
+
+section.signup form{
+     border: 0;
+     margin: 0;
+     padding: 0;
+}
+
+section.signup form .container{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: rgba(221, 221, 221, 0.5);
+     padding: 30px 50px 30px 50px;
+     outline: none;
+     border-radius: 5px;
+}
+
+section.signup form .container h1{
+     font-size: 2.2rem;
+     color: var(--mainText);
+     font-family: 'Roboto', sans-serif;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+}
+
+section.signup form .container p{
+     margin: 10px 0 40px 0;
+}
+
+
+
+section.signup form .container label{
+     text-align: left;
+     width: 100%;
+}
+
+section.signup form .container .input-box{
+     text-align: left;
+     width: 100%;
+     position: relative;
+     display: grid;
+     justify-content: space-between;
+     grid-template-columns: repeat(2, 1fr);
+     grid-column-gap: 1rem;
+     grid-row-gap: 0rem;
+}
+
+@media only screen and (max-width: 600px){
+     section.signup form .container .input-box{
+          grid-template-columns: repeat( auto-fit, 100%);
+
+     }
+}
+
+.signup form .container input[type="text"],
+.signup form .container input[type="email"], 
+.signup form .container input[type="tel"],
+.signup form .container input[type="password"] {
+     width: 100%;
+     padding: 15px 5px;
+     margin: 5px 0 22px 0;
+     display: inline-block;
+     border: none;
+     background: #f3f2f2;
+     border: 1px solid rgb(20, 20, 20, 0.5);
+     border-radius: 2px;
+     transition: all 0.3s ease-in-out;
+}
+
+.signup form .container input[type="text"]:focus,
+.signup form .container input[type="email"]:focus, 
+.signup form .container input[type="tel"]:focus,
+.signup form .container input[type="password"]:focus {
+     background-color: #ddd;
+     outline: none;
+}
+   
+   
+/* Set a style for all buttons */
+.signup form .container .clearfix button {
+     background-color: #000000;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+     opacity: 0.8;
+     border-radius: 2px;
+     outline: none;
+     transition: all 0.3s ease-in-out;
+}
+   
+.signup form .container .clearfix button:hover {
+     opacity:1;
+     border-radius: 15px;
+}
+
+.signup form .container .clearfix button:active {
+     opacity:1;
+     background: #777b7e;
+}
+
+
 
 
 /*--------------------------------*/
