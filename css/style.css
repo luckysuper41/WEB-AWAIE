@@ -417,7 +417,7 @@ section.banner{
      margin: 0 10px;
 }
 
-.banner .content .signinup div button{
+.banner .content .signinup div a{
      padding: 10px 30px;
      outline: none;
      font-size: 1.3rem;
@@ -428,14 +428,16 @@ section.banner{
      text-align: center;
      transition: all 0.2s ease-in-out;
      border: none;
+     color: var(--mainText);
+     background: #a3a2a2;
 }
 
-.banner .content .signinup div button:hover{
+.banner .content .signinup div a:hover{
      color: #50c8ff;
      background: rgb(54, 54, 54);
 }
    
-.banner .content .signinup div button:active{
+.banner .content .signinup div a:active{
      color: #50c8ff;
      background: rgb(54, 54, 54);
      transform: scale(0.97);
