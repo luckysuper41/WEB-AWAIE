@@ -598,6 +598,7 @@ section.review .content-review .text-review{
      align-items: center;
      text-align: center;
      width: 100%;
+     background: rgba(221, 221, 221, 0.5);
 }
 
 .background .container-contact{
@@ -605,7 +606,6 @@ section.review .content-review .text-review{
      width: 100%;
      min-height: 68.3vh;
      margin: 0 auto;
-     background: var(--secondaryColor);
      display: flex;
      justify-content: center;
      align-items: center;
@@ -781,7 +781,7 @@ section#wrapper-signin form{
      background: rgba(221, 221, 221, 0.5);
      padding: 30px 50px 80px 50px;
      outline: none;
-     border: 0;
+     border: 1px solid rgb(0, 0, 0, 0.5);
      border-radius: 5px;
      width: 30%;
      min-width: 300px;
@@ -922,9 +922,9 @@ section.signup{
 }
 
 section.signup form{
-     border: 0;
      margin: 0;
      padding: 0;
+     border: 1px solid rgb(0, 0, 0, 0.5);
 }
 
 section.signup form .container{
