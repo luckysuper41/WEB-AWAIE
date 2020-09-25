@@ -783,7 +783,7 @@ section#wrapper-signin form{
      outline: none;
      border: 1px solid rgb(0, 0, 0, 0.5);
      border-radius: 5px;
-     width: 30%;
+     width: 25%;
      min-width: 300px;
 
 }
@@ -913,12 +913,13 @@ section.signup{
      justify-content: center;
      align-items: center;
      text-align: center;
-     width: 100%;
+     width: 90%;
      position: relative;
      min-height: 78.8vh;
      margin: 0 auto;
      background: var(--secondaryColor);
-     margin:  100px 0 40px 0;
+     margin-top:  100px;
+     margin-bottom: 40px;
 }
 
 section.signup form{
