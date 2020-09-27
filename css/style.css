@@ -11,6 +11,8 @@
      
      --NavbarBGroundColor: #000000ff;
      --NavbarTextColor: #fff;
+
+
 }
 
 *{
@@ -25,6 +27,12 @@ a{
 
 }
 
+h2{
+     color: var(--mainText);
+     font-size: 3rem;
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+}
 body{
 	background: var(--mainColor);
 	width: 100%;
@@ -588,6 +596,146 @@ section.review .content-review .text-review{
 /*--------------------------------*/
 /*Organigramme.html*/
 /*--------------------------------*/
+
+section.organi{
+     margin: 0 auto;
+     padding: 60px 0 40px 0;
+     position: relative;
+     width: 90%;
+}
+
+.organi-box{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 20px 0 0 0;
+     margin: 0 auto;
+     transition: all 0.5s;
+}
+
+.organi-box .box-content{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 0;
+     margin: 0 auto;
+     transition: all 0.5s;
+}
+
+.organi-box .box-content{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 30px 0 0 0;
+     margin: 0 auto;
+     transition: all 0.5s;
+}
+
+.organi-box .box-content img{
+     width: 40%;
+     height: 40%;
+     min-width: 300px;
+     min-height: 300px;
+     transition: all 0.2s;
+     opacity: 0.9;
+}
+
+.organi-box .box-content img:hover{
+     opacity: 1;
+}
+
+.organi-box .box-content div{
+     position: relative;
+     margin: 0 auto;
+     padding:  20px 0 0 0;
+     font-size: 1rem;
+     color: var(--mainText);
+     transition: all 0.2s;
+}
+
+.organi-box .box-content .element-1{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 0;
+     margin: 0 auto;
+     transition: all 0.5s;
+}
+
+.organi-box .box-content .element-1 img{
+     width: 40%;
+     height: 40%;
+     min-width: 300px;
+     min-height: 300px;
+     transition: all 0.2s;
+     opacity: 0.9;
+}
+
+.organi-box .box-content .element-1 img:hover{
+     opacity: 1;
+}
+
+.organi-box .box-content .element-1 .ele-content{
+     position: relative;
+     margin: 0 auto;
+     padding:  20px 0 0 0;
+     font-size: 1rem;
+     color: var(--mainText);
+     transition: all 0.2s;
+}
+
+.organi-box .box-content .element-2{
+     position: relative;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, 280px);
+     grid-column-gap: 2rem;
+     grid-row-gap: 1rem;
+     justify-content: center;
+     align-items: flex-start;
+     padding: 30px 0 0 0;
+     margin: 0 auto;
+     transition: all 0.5s;
+     width: 100%;
+}
+
+.organi-box .box-content .element-2 .small-ele{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 0;
+     margin: 0 auto;
+     transition: all 0.5s;
+}
+
+.organi-box .box-content .element-2 .small-ele img{
+     width: 280px;
+     height: 280px;
+     transition: all 0.2s;
+     opacity: 0.9;
+}
+
+.organi-box .box-content .element-2 .small-ele img:hover{
+     opacity: 1;
+}
+
+.organi-box .box-content .element-2 .small-ele .s-ele-content{
+     position: relative;
+     margin: 0 auto;
+     padding:  20px 0 0 0;
+     font-size: 1rem;
+     color: var(--mainText);
+     transition: all 0.2s;
+}
 
 /*--------------------------------*/
 /*Contact.html*/
