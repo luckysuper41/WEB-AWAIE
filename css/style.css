@@ -1331,6 +1331,18 @@ footer{
 }
 
 @media screen and (min-width: 768px) { 
+     footer{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          min-height: 100px;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          background: var(--NavbarBGroundColor);
+          padding-top: 30px;
+     }
+     
      .footer-content{
           grid-template-columns: repeat(2, 1fr);
           grid-column-gap: 1rem;
