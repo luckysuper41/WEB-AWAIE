@@ -11,33 +11,35 @@
      
      --NavbarBGroundColor: rgb(56, 107, 202) ;
      --NavbarTextColor: #fff;
-
-
 }
 
 *{
   box-sizing: border-box;
+
   margin: 0;
   padding: 0;
+
   font-size: 14px;
 }
 
 a{
      text-decoration: none;
-
 }
 
 h2{
      color: var(--mainText);
+
      font-size: 3rem;
      text-align: center;
-     font-family: 'Roboto', sans-serif;
 }
+
 body{
-	background: var(--mainColor);
+     background: var(--mainColor);
+     
 	width: 100%;
-	height: 100%;
-	min-width: 360px;
+     height: 100%;
+     min-width: 360px;
+
      z-index: 1;
 }
 
@@ -61,44 +63,47 @@ header.header-nav{
      position: fixed;
      top: 0;
      left: 0;
-     background: var(--NavbarBGroundColor);
+
+     display: flex;
      height: 60px;
      width: 100%;
-     display: flex;
      justify-content: space-between;
+
+     background: var(--NavbarBGroundColor);
+     
      align-items: center;
      padding: 10px 50px;
-     transition: all 0.5s ease-in-out;
+
+     transition: all 0.3s ease-in-out;
      z-index: 9999;
 }
 
 header.header-nav .navbar-logo a.logo{
      position: relative;
-     display: flex;
 }
 
 header.header-nav .navbar-logo a.logo span{
      position: relative;
-     left: 0;
-	top: 0;
+
      color: var(--NavbarTextColor);
+
      font-weight: 500;
      font-size: 2.4rem;
      letter-spacing: 2px;
      font-family: 'Dancing Script', cursive;
      text-transform: uppercase;
-     transition: all 0.5s ease-in-out;
+
+     transition: all 0.3s ease-in-out;
 }
 
 header.header-nav .navbar-logo a.logo:hover span{
-     transform: scale(1.05);
+     font-size: 2.5rem;
 }
 
 /*navigation*/
 #navigation{
      position: relative;
      place-items: center;
-     transition: all 0.5s ease-in-out;
 }
 
 #navigation ul{
@@ -108,37 +113,46 @@ header.header-nav .navbar-logo a.logo:hover span{
 
 #navigation ul li{
      list-style: none;
+
      padding: 0px 15px;
 }
 
 #navigation .nav-link{
      display: flex;
      position: relative;
+
      color: var(--NavbarTextColor);
+
      font-size: 1rem;
      font-weight: 500;
      text-transform: uppercase;
-     padding: 7px 0;
      letter-spacing: 2px;
-     transition: all 0.3s ease-in-out;
      font-family: 'Russo One', sans-serif;
+
+     padding: 7px 0;
+     
+     transition: all 0.3s ease-in-out;
 }
 
 .nav-link::before{
      content: '';
+
      position: absolute;
-     width: 0%;
      bottom: 0;
      left: -1px;
-     height: 1.5px;
-     transition: all 0.3s ease;
-     background-color: white;
-}
 
+     width: 0%;
+     height: 1.5px;
+
+     background-color: white;
+
+     transition: all 0.3s ease;
+}
 
 #navigation .nav-link:hover{
      transform: translateY(-3px);
 }
+
 .nav-link:hover:before{
      width: 100%;
 }
@@ -151,52 +165,65 @@ header.header-nav .navbar-logo a.logo:hover span{
 .wrapper-header #check:checked ~ .sidebar{
      right: 0;
 }
+
 .wrapper-header label #toggle{
      display: none;
+     width: 30px;
+     height: 30px;
+
      position: fixed;
      top: 15px;
      right: 50px;
+
      overflow: none;
-     width: 30px;
-     height: 30px;
      cursor: pointer;
-     transition: all 0.5s ease-in-out;
      z-index: 999;
+
+     transition: all 0.3s ease-in-out;
 }
 
 .wrapper-header label #toggle:before{
      content: '';
+
      position: absolute;
      top: 7px;
+
      width: 100%;
      height: 2px;
+
      background: #fff;
 }
 
 .wrapper-header label #toggle:after{
      content: '';
+
      position: absolute;
      bottom: 7px;
+
      width: 100%;
      height: 2px;
+
      background: #fff;
 }
 
 .wrapper-header #check:checked ~ label #toggle:before{
      top: 50%;
      left: 50%;
+
      transform: translate(-50%,-50%) rotate(-45deg);
 }
 
 .wrapper-header #check:checked ~ label #toggle:after{
      top: 50%;
      left: 50%;
+
      transform: translate(-50%,-50%) rotate(45deg);
 }
 
 .wrapper-header #check:checked ~ label #toggle{
      top: 15px;
      right: 20px;
+
      transform: rotate(-720deg);
 }
 
@@ -204,55 +231,71 @@ header.header-nav .navbar-logo a.logo:hover span{
      position: fixed;
      top: 0;
      right: -200px;
+
      width: 200px;
      height: 100vh;
+
      background: #3282B8;
-     transition: all 0.5s ease-in-out;
+
+     transition: all 0.3s ease-in-out;
 }
 
 .wrapper-header .sidebar div{
      height: 60px;
+
      text-align: left;
-     user-select: none;
      text-transform: uppercase;
+
      background: #13405e;
+
+     user-select: none;
      overflow: hidden;
 }
 
 .wrapper-header .sidebar div span{
      font-size: 2rem;
-     color: #fff;
      line-height: 60px;
      letter-spacing: 0.3ch;
      font-weight: 500;
-     transition: all 0.5s ease-in-out; 
-     overflow: hidden;
      font-family: 'Russo One', sans-serif;
+
+     overflow: hidden;
+     
+     color: #fff;
+
+     transition: all 0.3s ease-in-out; 
 }
 
 .wrapper-header .sidebar ul{
      list-style: none;
 }
+
 .wrapper-header .sidebar ul li a{
      display: flex;
-     color: var(--NavbarTextColor);
      height: 65px;
      width: 100%;
+
+     color: var(--NavbarTextColor);
+     
      justify-content: start;
      align-items: center;
+
      box-sizing: border-box;
      border-top: 1px solid rgba(255, 255, 255, 0.1);
      border-bottom: 1px solid #000;
-     transition: all 0.3s ease-in-out;
+
      overflow: hidden;
+
+     transition: all 0.3s ease-in-out;
 }
 
 .wrapper-header .sidebar ul a span{
      text-transform: uppercase;
      letter-spacing: 2px;
      font-size: 1rem;
-     transition: all 0.3s;
      font-family: 'Russo One', sans-serif;
+
+     transition: all 0.3s;
 }
 
 .wrapper-header ul li:hover,.wrapper-header ul li:active a{
@@ -313,6 +356,7 @@ header.header-nav .navbar-logo a.logo:hover span{
      .wrapper-header label #toggle{
           top: 17px;
           right: 20px;
+
           width: 25px;
           height: 25px;
      }
@@ -324,6 +368,7 @@ header.header-nav .navbar-logo a.logo:hover span{
 
      .wrapper-header .sidebar{
           right: -170px;
+
           width: 170px;
      }
 
@@ -344,30 +389,31 @@ header.header-nav .navbar-logo a.logo:hover span{
      }
 }
 
-
 /*--------------------------------*/
 /*Homepage.html*/
 /*--------------------------------*/
-
 
 /*banner*/
 section.banner{
      position: relative;
      width: 100%;
      min-height: 100vh;
-     background-image: url(../img/maison.jpg);
-     background-position: center;
-     background-size: cover;
-     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;
+
      display: flex;
      justify-content: center;
      align-items: center;
+
+     background-image: url(../img/maison.jpg);
+     background-position: center;
+     background-size: cover;
+     box-shadow: inset 0px 0px 500px #000000, inset 0px 0px 500px #000000;  
 }
 
 .banner .content{
      position: relative;
      width: 100%;
      height: 100%;
+
      text-align: center;
 }
 
@@ -377,30 +423,37 @@ section.banner{
 
 .banner .content .intro h1{
      font-size: 2.2rem;
-     color: var(--NavbarTextColor);
-     font-family: 'Roboto', sans-serif;
      line-height: 4rem;
      letter-spacing: 2px;
+     font-family: 'Russo One', sans-serif;
+
+     color: var(--NavbarTextColor);
 }
 
 .banner .content .intro h1 span{
      font-family: 'Russo One', sans-serif;
-     color: #50c8ff;
      font-size: 2.8rem;
+
+     color: #50c8ff;
 }
 
 .banner .content .intro .animate-text{
      position: relative;
+
      padding: 2rem 0;
 }
 
 .banner .content .intro .animate-text span{
-	font-family: 'Roboto', sans-serif;
      position: relative;
-     color: #fff;
+
      display: inline-block;
+
+     color: #fff;
+     
      font-size: 1.5rem;
      letter-spacing: 3px;
+     font-family: 'Roboto', sans-serif;
+
      animation: animatetext 2s ease-in-out infinite;
      animation-delay: calc(0.1s * var(--i));
 }
@@ -420,22 +473,27 @@ section.banner{
 
 .banner .content .signinup div{
      display: inline;
+
      margin: 0 10px;
 }
 
 .banner .content .signinup div a{
-     padding: 10px 30px;
-     outline: none;
      font-size: 1.3rem;
 	font-weight: 500;
      letter-spacing: 1px;
-     border-radius: 2px;
-	font-family: 'Russo One', sans-serif;
+     font-family: 'Russo One', sans-serif;
      text-align: center;
-     transition: all 0.2s ease-in-out;
+
+     padding: 10px 30px;
+     border-radius: 2px;
      border: none;
+	
+     outline: none;
+     
      color: var(--mainText);
      background: #a3a2a2;
+
+     transition: all 0.3s ease-in-out;
 }
 
 .banner .content .signinup div a:hover{
@@ -446,6 +504,7 @@ section.banner{
 .banner .content .signinup div a:active{
      color: #50c8ff;
      background: rgb(54, 54, 54);
+
      transform: scale(0.97);
 }
 
@@ -453,7 +512,9 @@ section.banner{
 section.introduction{
      position: relative;
      width: 90%;
+
      background: var(--secondaryColor);
+
      padding: 40px 0;
      margin: 0 auto;
 }
@@ -461,14 +522,17 @@ section.introduction{
 section.introduction h1{
      text-align: center;
      font-size: 2.5rem;
+     text-transform: uppercase;
+
      margin: 0 auto;
      padding: 30px 0;
-     text-transform: uppercase;
 }
 
 section.introduction .background-intro{
      position: relative;
+
      text-align: center;
+
      margin: 0 auto;
      padding: 20px 0;
 }
@@ -476,12 +540,15 @@ section.introduction .background-intro{
 section.introduction .background-intro img{
      width: 60%;
      height: 60%;
-     text-align: center;
      min-width: 320px;
      min-height: 300px;
+
+     text-align: center;
+     
      overflow: hidden;
      opacity: 0.9;
-     transition: all 0.2s ease-in-out;
+
+     transition: all 0.3s ease-in-out;
 }
 
 section.introduction .background-intro img:hover{
@@ -491,28 +558,32 @@ section.introduction .background-intro img:hover{
 section.introduction .content-intro{
      position: relative;
      width: 100%;
+
 	display: grid;
      grid-template-columns: repeat(auto-fit , 300px);
 	grid-column-gap: 1rem;
-	grid-row-gap: 1rem;
-	justify-content: center;
-	align-items: center;
+     grid-row-gap: 1rem;
+     justify-content: center;
+     align-items: center;
+     
      margin: 0 auto;
 }
 
 section.introduction .content-intro .box-intro{
      position: relative;
+
      box-sizing: border-box;
      margin: 0 auto;
-    
 }
 
 section.introduction .content-intro .box-intro img{
      width: 300px;
      height: 300px;
+
      overflow: hidden;
      opacity: 0.9;
-     transition: all 0.2s ease-in-out;
+
+     transition: all 0.3s ease-in-out;
 }
 
 section.introduction .content-intro .box-intro:hover img{
@@ -521,11 +592,15 @@ section.introduction .content-intro .box-intro:hover img{
 
 section.introduction .content-intro .description{
      position: relative;
+
      display: block;
+
      text-align: justify;
      font-size: 1rem;
-     color: var(--mainText);
      letter-spacing: 0.5px;
+
+     color: var(--mainText);
+     
      padding-top: 15px;
 }
 
@@ -533,48 +608,56 @@ section.introduction .content-intro .description{
 section.review{
      position: relative;
      width: 90%;
+
      background: var(--mainColor);
-     padding: 0;
+
      margin: 0 auto;
-     padding: 40px 0;
+     padding: 40px 0 40px 0;
 }
 
 section.review h1{
      text-align: center;
      font-size: 2.5rem;
-     margin: 0 auto;
-     padding: 30px 0;
      text-transform: uppercase;
+
+     margin: 0 auto;
+     padding: 30px 0;  
 }
 
 
 section.review .content-review{
      position: relative;
      width: 100%;
+
 	display: grid;
      grid-template-columns: repeat(auto-fit , 300px);
 	grid-column-gap: 1rem;
 	grid-row-gap: 1rem;
 	justify-content: center;
-	align-items: center;
+     align-items: center;
+     
      margin: 0 auto;
 }
 
 section.review .content-review .box-review{
      position: relative;
+
      box-sizing: border-box;
      margin: 0 auto;
+     
      text-align: center;
-    
 }
 
 section.review .content-review .box-review img{
      width: 200px;
      height: 200px;
+
      border-radius: 50%;
+
      overflow: hidden;
      opacity: 0.9;
-     transition: all 0.2s ease-in-out;
+
+     transition: all 0.3s ease-in-out;
 }
 
 section.review .content-review .box-review:hover img{
@@ -583,11 +666,15 @@ section.review .content-review .box-review:hover img{
 
 section.review .content-review .text-review{
      position: relative;
+
      display: block;
+
      text-align: justify;
      font-size: 1rem;
-     color: var(--mainText);
      letter-spacing: 0.5px;
+
+     color: var(--mainText);
+     
      padding-top: 15px;
 }
 
@@ -596,43 +683,39 @@ section.review .content-review .text-review{
 /*--------------------------------*/
 
 section.organi{
-     margin: 0 auto;
-     padding: 60px 0 40px 0;
      position: relative;
      width: 90%;
+
+     margin: 0 auto;
+     padding: 60px 0 40px 0;
 }
 
 .organi-box{
      position: relative;
+
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+
      padding: 20px 0 0 0;
      margin: 0 auto;
-     transition: all 0.5s;
+
+     transition: all 0.3s;
 }
 
 .organi-box .box-content{
      position: relative;
+
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+
      padding: 0;
      margin: 0 auto;
-     transition: all 0.5s;
-}
 
-.organi-box .box-content{
-     position: relative;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding: 30px 0 0 0;
-     margin: 0 auto;
-     transition: all 0.5s;
+     transition: all 0.3s;
 }
 
 .organi-box .box-content img{
@@ -640,8 +723,10 @@ section.organi{
      height: 40%;
      min-width: 300px;
      min-height: 300px;
-     transition: all 0.2s;
+     
      opacity: 0.9;
+
+     transition: all 0.3s;
 }
 
 .organi-box .box-content img:hover{
@@ -650,22 +735,29 @@ section.organi{
 
 .organi-box .box-content div{
      position: relative;
+
      margin: 0 auto;
      padding:  20px 0 0 0;
+
      font-size: 1rem;
+
      color: var(--mainText);
-     transition: all 0.2s;
+
+     transition: all 0.3s;
 }
 
 .organi-box .box-content .element-1{
      position: relative;
+
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+
      padding: 0;
      margin: 0 auto;
-     transition: all 0.5s;
+
+     transition: all 0.3s;
 }
 
 .organi-box .box-content .element-1 img{
@@ -673,8 +765,10 @@ section.organi{
      height: 40%;
      min-width: 300px;
      min-height: 300px;
-     transition: all 0.2s;
+
      opacity: 0.9;
+
+     transition: all 0.3s;
 }
 
 .organi-box .box-content .element-1 img:hover{
@@ -683,43 +777,55 @@ section.organi{
 
 .organi-box .box-content .element-1 .ele-content{
      position: relative;
+
      margin: 0 auto;
      padding:  20px 0 0 0;
+
      font-size: 1rem;
+
      color: var(--mainText);
-     transition: all 0.2s;
+
+     transition: all 0.3s;
 }
 
 .organi-box .box-content .element-2{
      position: relative;
-     display: grid;
+
+     display: grid;  
+     width: 100%;
      grid-template-columns: repeat(auto-fit, 280px);
      grid-column-gap: 2rem;
      grid-row-gap: 1rem;
      justify-content: center;
      align-items: flex-start;
+
      padding: 30px 0 0 0;
      margin: 0 auto;
-     transition: all 0.5s;
-     width: 100%;
+
+     transition: all 0.3s;
 }
 
 .organi-box .box-content .element-2 .small-ele{
      position: relative;
+
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+
      padding: 0;
      margin: 0 auto;
-     transition: all 0.5s;
+
+     transition: all 0.3s;
 }
 
 .organi-box .box-content .element-2 .small-ele img{
      width: 280px;
      height: 280px;
-     transition: all 0.2s;
+
      opacity: 0.9;
+
+     transition: all 0.3s;
 }
 
 .organi-box .box-content .element-2 .small-ele img:hover{
@@ -728,11 +834,15 @@ section.organi{
 
 .organi-box .box-content .element-2 .small-ele .s-ele-content{
      position: relative;
+
      margin: 0 auto;
      padding:  20px 0 0 0;
+
      font-size: 1rem;
+
      color: var(--mainText);
-     transition: all 0.2s;
+
+     transition: all 0.3s;
 }
 
 /*--------------------------------*/
@@ -745,58 +855,69 @@ section.organi{
      justify-content: center;
      align-items: center;
      text-align: center;
+
      width: 100%;
+     height: calc(100vh);
+
      background: rgba(221, 221, 221, 0.5);
 }
 
 .background .container-contact{
      position: relative;
+
+     display: flex;
      width: 100%;
      min-height: 68.3vh;
-     margin: 0 auto;
-     display: flex;
      justify-content: center;
      align-items: center;
+
      margin:  100px 0 40px 0;
 }
 
 .container-contact form{
      position: relative;
      width: 60%;
-     margin: 0 auto;
      min-width: 300px;
+
+     margin: 0 auto;
 }
 
 
 .container-contact form h2{
      width: 100%;
+
      color: var(--mainText);
+
      font-size: 3rem;
      text-align: center;
-     margin-top:  20px;
      font-family: 'Roboto', sans-serif;
+
+     margin-top:  20px;
 }
 
 .container-contact form .row100{
      position: relative;
      width:  100%;
+
      display:  grid;
      grid-template-columns:  repeat(auto-fit, minmax(300px,1fr));
-     
 }
 
 .container-contact form .row100 .col{
      position: relative;
      width: 100%;
+
      padding: 0 15px;
      margin:  30px 0 10px;
-     transition: 0.5s;
+
+     transition: 0.3s;
 }
 
 .container-contact form .row100 .inputBox{
      position: relative;
      width: 100%;
      height: 40px;
+
      color:  var(--mainText);
 }
 
@@ -805,47 +926,63 @@ section.organi{
      position: relative;
      width: 100%;
      height: 100%;
+
      background: transparent;
      box-shadow: none;
-     border:  none;
-     outline: none;
-     font-size: 1.15rem;
-     padding: 0 10px;
-     z-index: 1;
      color: #000;
+
+     border:  none;
+     
+     font-size: 1.15rem;
      font-family: 'Roboto', sans-serif;
+
+     padding: 0 10px;
+
+     outline: none;
+     z-index: 1;
 }
 
 .container-contact form .row100 .inputBox .text{
      position: absolute;
      top: 0;
      left: 0;
+
+     display: block;
+
      line-height: 40px;
      font-size: 1.15rem;
-     padding: 0 10px;
-     display: block;
-     transition:  0.5s;
-     pointer-events: none;
      font-family: 'Roboto', sans-serif;
+
+     padding: 0 10px;
+     
+     pointer-events: none;
+     
+     transition:  all 0.3s;
 }
 
 .container-contact form .row100 .inputBox input:focus + .text,
 .container-contact form .row100 .inputBox input:valid + .text{
      top: -35px;
      left: -10px;
+
      font-size: 1rem;
 }
 
 .container-contact form .row100 .inputBox .line{
      position: absolute;
      bottom: 0;
+
      display: block;
      width: 100%;
      height: 2px;
-     background:  rgb(116, 116, 122, 0.3);
-     transition: 0.5s;
+
+     background:  rgb(116, 116, 122, 0.2);
+     
      border-radius: 2px;
+
      pointer-events: none;
+
+     transition: all 0.3s;
 }
 
 .container-contact form .row100 .inputBox input:focus ~ .line,
@@ -856,12 +993,14 @@ section.organi{
 .container-contact form .row100 .inputBox.textarea{
      position: relative;
      width: 100%;
-     height: 100px;
+     height: 200px;
+
      padding:  10px 0;
 }
 
 .container-contact form .row100 .inputBox.textarea textarea{
      height: 100%;
+
      resize: none;
      overflow: hidden;
 }
@@ -870,6 +1009,7 @@ section.organi{
 .container-contact form .row100 .inputBox textarea:valid + .text{
      top: -35px;
      left: -10px;
+
      font-size: 1rem;
 }
 
@@ -879,18 +1019,24 @@ section.organi{
 }
 
 .container-contact form .row100 .inputBox input[type="submit"]{
+     width: 150px;
+
      border:  none;
+     border-radius: 2px;
+
      padding:  7px 35px;
-     cursor: pointer;
-     outline: none;
+     
      background: rgb(116, 116, 122, 0.3);
      color: var(--color-is-1);
+
      font-size: 1.3rem;
-     border-radius: 2px;
      text-align: center;
-     width: 150px;
-     transition: 0.2s all ease-in-out;
      font-family: 'Roboto', sans-serif;
+
+     cursor: pointer;
+     outline: none;
+
+     transition: 0.3s all ease-in-out;
 }
 
 .container-contact form .row100 .inputBox input[type="submit"]:hover{
@@ -901,6 +1047,7 @@ section.organi{
 .container-contact form .row100 .inputBox input[type="submit"]:active{
      color: #000000;
      background: rgb(53, 53, 53, 0.4);
+
      transform: scale(0.97);
 }
 
@@ -913,32 +1060,39 @@ section#wrapper-signin{
      align-items: center;
      text-align: center;
      width: 100%;
+     height: calc(100vh );
+
      position: relative;
-     min-height: 68.4vh;
-     margin: 0 auto;
+
      background: var(--secondaryColor);
-     margin:  100px 0 40px 0;
+
+     margin: 0 auto;
+     padding: 50px 30px 0 0;
 }
 
 section#wrapper-signin form{
      position: relative;
+
      display: flex;
+     width: 330px;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+
      background: rgba(238, 237, 237, 0.2);
-     padding: 30px 50px 80px 50px;
-     outline: none;
-     border: 1px solid rgb(0, 0, 0, 0.2);
-     border-radius: 5px;
-     width: 330px;
      box-shadow: 2px 2px 2px #000 ;
 
+     padding: 30px 50px 80px 50px;
+     border: 1px solid rgb(0, 0, 0, 0.2);
+     border-radius: 5px;
+
+     outline: none;
 }
 
 section#wrapper-signin form h1{
-     font-size: 2.2rem;
      color: var(--mainText);
+
+     font-size: 2.2rem;
      font-family: 'Roboto', sans-serif;
      line-height: 10rem;
      letter-spacing: 1px;
@@ -947,15 +1101,20 @@ section#wrapper-signin form h1{
 
 section#wrapper-signin .content-login{
      position: relative;
-     margin: 0 auto;
-     text-align: center;
+
      width: 100%;
+
+     margin: 0 auto;
+
+     text-align: center;
 }
 
 section#wrapper-signin .content-login .inputBox{
      position: relative;
-     margin-bottom: 40px;
+
      width: 100%;
+
+     margin-bottom: 40px;
 }
    
 section#wrapper-signin .content-login .inputBox:last-child{
@@ -964,37 +1123,47 @@ section#wrapper-signin .content-login .inputBox:last-child{
 
 section#wrapper-signin .content-login .inputBox input{
      position: relative;
-     background: transparent;
-     outline: none;
-     border: none;
+
      width: 100%;
+
+     background: transparent; 
      color: var(--mainText);
+
+     border: none;
+     border-bottom: 1.5px solid  #444444;
      padding-bottom: 5px;
+
      font-size: 1.2rem;
      letter-spacing: 1px;
      font-weight: 300;
-     border-bottom: 1.5px solid  #444444;
+     
+     outline: none;
      resize: none;
 }
 
 section#wrapper-signin .content-login .inputBox span{
      position: absolute;
      left: 0;
+
+     display: inline-block;
+
      font-size: 1.15rem;
      font-weight: 300;
-     display: inline-block;
      pointer-events: none;
      letter-spacing: 1px;
+
      color: #444444;
+
      transition: all 0.3s ease;
 }
 
 section#wrapper-signin .content-login .inputBox input:focus ~ span,
 section#wrapper-signin .content-login .inputBox input:valid ~ span{
-  transform: translateY(-1.3rem);
   color: var(--mainText);
+
   font-size: 1rem;
-  font-weight: 600;
+
+  transform: translateY(-1.3rem);
 }
 
 section#wrapper-signin .content-login .inputBox input:focus,
@@ -1005,28 +1174,34 @@ section#wrapper-signin .content-login .inputBox input:valid{
 
 section#wrapper-signin .button-login{
      position: relative;
+
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+
      margin-top: 50px;
 }
 
 section#wrapper-signin .button-login .submit-btn{
-     width: 130px;
-     padding: 10px 27px;
-     cursor: pointer;
      display: block;
-     background: linear-gradient(to right, #beb1af, #57474a);
-     border: 0;
-     outline: none;
+     width: 130px;
+
+     padding: 10px 27px;
+     margin-top: 10px;
+     border: none;
      border-radius: 0px;
-     transition: all 0.2s ease-in-out;
+     
+     background: linear-gradient(to right, #beb1af, #57474a);
+     color: #ffffff;
+
      font-size: 1.1rem;
      font-family: 'Roboto', sans-serif;
-     color: var(--mainText);
-     transition: all 0.3s ease-out;
-     margin-top: 10px;
+     
+     cursor: pointer;
+     outline: none;
+
+     transition: all 0.3s ease-out;   
 }
    
 section#wrapper-signin .button-login .submit-btn:hover{
@@ -1039,10 +1214,14 @@ section#wrapper-signin .button-login .submit-btn:active{
 
 section#wrapper-signin .button-login a{
      position: relative;
+
      display: block;
+
      margin-top: 10px;
+
      color: var(--mainText);
      font-size: 1.1rem;
+
      transition: all 0.3s ease-in-out;
 }
 
@@ -1061,41 +1240,51 @@ section.signup{
      justify-content: center;
      align-items: center;
      text-align: center;
-     width: 90%;
+     width: 100%;
+     min-height: calc(100vh);
+
      position: relative;
-     min-height: 78.8vh;
-     margin: 0 auto;
+
      background: var(--secondaryColor);
-     margin-top:  100px;
-     margin-bottom: 40px;
+
+     margin: 0 auto;
+     padding: 100px 20px 40px 20px;
 }
 
 section.signup form{
      margin: 0;
      padding: 0;
+
      border: 1px solid rgb(0, 0, 0, 0.2);
-     background: rgba(238, 237, 237, 0.2);
      border-radius: 5px;
-     outline: none;
+
+     background: rgba(238, 237, 237, 0.2);
      box-shadow: 2px 2px 2px #000 ;
+     
+     outline: none;
+     
      transition: all 0.3s ease-in-out ;
 }
 
 section.signup form .container{
      position: relative;
+
      display: flex;
      flex-direction: column;
      justify-content: center;
+
      align-items: center;
+
      padding: 30px 50px 30px 50px;
 }
 
 section.signup form .container h1{
      font-size: 2.2rem;
-     color: var(--mainText);
      font-family: 'Roboto', sans-serif;
      letter-spacing: 1px;
      text-transform: uppercase;
+
+     color: var(--mainText);
 }
 
 section.signup form .container p{
@@ -1106,24 +1295,26 @@ section.signup form .container p{
 
 section.signup form .container label{
      text-align: left;
+
      width: 100%;
 }
 
 section.signup form .container .input-box{
-     text-align: left;
-     width: 100%;
      position: relative;
+     
      display: grid;
-     justify-content: space-between;
+     width: 100%;
      grid-template-columns: repeat(2, 1fr);
      grid-column-gap: 1rem;
      grid-row-gap: 0rem;
+     justify-content: space-between;
+
+     text-align: left;
 }
 
 @media only screen and (max-width: 600px){
      section.signup form .container .input-box{
           grid-template-columns: repeat( auto-fit, 100%);
-
      }
 }
 
@@ -1131,14 +1322,17 @@ section.signup form .container .input-box{
 .signup form .container input[type="email"], 
 .signup form .container input[type="tel"],
 .signup form .container input[type="password"] {
+     display: inline-block;
      width: 100%;
+
      padding: 15px 5px;
      margin: 5px 0 22px 0;
-     display: inline-block;
      border: none;
-     background: #f3f2f2;
      border: 1px solid rgb(20, 20, 20, 0.5);
      border-radius: 2px;
+
+     background: #f3f2f2;
+
      transition: all 0.3s ease-in-out;
 }
 
@@ -1151,33 +1345,41 @@ section.signup form .container .input-box{
 .signup form .container input[type="password"]:focus,
 .signup form .container input[type="password"]:valid {
      background-color: rgba(224, 224, 224, 0.5);
+
      outline: none;
+
      border-radius: 10px;
 }
    
    
 /* Set a style for all buttons */
 .signup form .container .clearfix button {
+     width: 100%;
+
      background-color: #000000;
      color: white;
+
      padding: 14px 20px;
      margin: 8px 0;
      border: none;
-     cursor: pointer;
-     width: 100%;
-     opacity: 0.8;
      border-radius: 2px;
+
+     cursor: pointer;
+     opacity: 0.8;
      outline: none;
+
      transition: all 0.3s ease-in-out;
 }
    
 .signup form .container .clearfix button:hover {
      opacity:1;
+
      border-radius: 15px;
 }
 
 .signup form .container .clearfix button:active {
      opacity:1;
+
      background: #777b7e;
 }
 
@@ -1191,17 +1393,20 @@ section.signup form .container .input-box{
 
 footer{
      position: relative;
+
      display: flex;
      flex-direction: column;
      width: 100%;
      justify-content: center;
      align-items: center;
+
      background: var(--NavbarBGroundColor);
      padding-top: 30px;
 }
 
 .footer-content{
      position: relative;
+
      display: grid;
      width: 90%;
      grid-template-areas: 
@@ -1209,10 +1414,12 @@ footer{
      'box-info'
      'box-support'
      'box-email';
-     color: #fff;
-     border-bottom: 1px solid #fff;
      justify-content: space-around;
      align-items: center;
+
+     color: #fff;
+
+     border-bottom: 1px solid #fff;
 }
 
 .box-image{
@@ -1233,9 +1440,10 @@ footer{
 
 .footer-content .f-content-box{
      position: relative;
+     width: 280px;
+
      margin:  0 auto;
      padding: 10px;
-     width: 280px;
 }
 
 .f-content-box .logo-box{
@@ -1245,26 +1453,32 @@ footer{
 .f-content-box .logo-box img{
      width: 200px;
      height: 200px;
+
      border-radius: 5px;
 }
 
 .f-content-box .icons-box{
      position: relative;
+
      display: flex;
      flex-direction: row;
-     margin: 10px auto 0 auto;
      justify-content: center;
      align-items: center;
+
+     margin: 10px auto 0 auto;
 }
 
 .f-content-box .icons-box a{
-     text-decoration: none;
      margin: 0 10px;
+
      opacity: 0.8;
+     text-decoration: none;
+
      transition: 0.3s ease-out;
 }
 .f-content-box .icons-box a:hover{
      opacity: 1;
+
      transform: scale(1.1);
 }
 
@@ -1283,9 +1497,11 @@ footer{
 
 .f-content-box .header-box h2{
      font-size: 2.2rem;
-     margin: 10px auto 10px auto;
      letter-spacing: 1px;
      text-transform: uppercase;
+
+     margin: 10px auto 10px auto;
+
      color: #fff;
 }
 
@@ -1306,10 +1522,14 @@ footer{
 
 .f-content-box .input-box form .email{
      width: 250px;
+
      padding: 10px 5px;
      margin: 0 auto 10px auto;
-     outline: none;
+
      border: 1px solid rgb(184, 181, 181);
+
+     outline: none;
+     
      transition: 0.3s ease-out;
 }
 
@@ -1320,14 +1540,20 @@ footer{
 
 .f-content-box .input-box form .submit{
      width: 120px;
+
      margin: 0 auto 10px auto;
      padding: 8px 0;
+
      font-size: 1.2rem;
+
      border: 1px solid #fff;
+
      background: #e9e9e9;
+
      outline: none;
-     transition: 0.3s ease-out;
      cursor: pointer;
+
+     transition: 0.3s ease-out;
 }
 .f-content-box .input-box form .submit:hover,
 .f-content-box .input-box form .submit:focus{
@@ -1335,36 +1561,43 @@ footer{
 }
 
 .footer-copyright{
-     width: 100%;
      position: relative;
+
      display: flex;
+     width: 100%;
      flex-direction: column;
-     margin: 0 auto;
      justify-content: center;
      text-align: center;
+
+     margin: 0 auto;
      padding: 15px 0 15px 0;
 }
 
 .footer-copyright .f-content{
      color: var(--secondaryColor);
+
      font-size: 1.1rem;
 }
 
 @media screen and (min-width: 675px) { 
      footer{
           position: relative;
+
           display: flex;
           flex-direction: column;
           min-height: 100px;
           width: 100%;
           justify-content: center;
           align-items: center;
+
           background: var(--NavbarBGroundColor);
+
           padding-top: 30px;
      }
      
      .footer-content{
           padding: 10px 0 20px 0;
+
           grid-template-areas: 
           'box-image box-info'
           'box-email box-support';
